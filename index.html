@@ -252,6 +252,13 @@ ol.steps li{padding:4px 0 4px 4px}
 .corr svg{width:100%;height:auto}
 .gridref{width:100%;max-width:340px;height:auto}
 @media(max-width:600px){.flow{grid-template-columns:repeat(2,1fr)}}
+.tfg{display:flex;flex-wrap:wrap;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);border-left:5px solid var(--navy);border-radius:10px;padding:10px 12px;margin:12px 0}
+.tfg .lbl{font:800 15px 'Nunito';color:var(--navy);margin-right:4px;flex-basis:100%}
+.tfg a{display:inline-flex;align-items:center;gap:8px;font:800 15px 'Nunito';color:#fff;background:var(--navy);border-radius:999px;padding:9px 15px;text-decoration:none}
+.tfg a::before{content:'';border-left:9px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.tfg a:hover{background:var(--moss)}
+.tfg a:focus-visible{outline:3px solid var(--moss);outline-offset:2px}
+.tfg small{flex-basis:100%;color:var(--mut);font-size:13px;font-weight:700}
 </style>
 </head>
 <body>
@@ -559,6 +566,7 @@ ol.steps li{padding:4px 0 4px 4px}
 <!-- ===== HAZARDS ===== -->
 <div class="sub" id="mk-hz">
 <div class="jump"><a href="#hz-learn">Learn it</a><a href="#hz-case">Kashmir</a><a href="#hz-test">Self-test</a><a href="#hz-exam">Exam practice</a></div>
+<div class="tfg"><span class="lbl">Watch first on Time for Geography</span><a href="https://timeforgeography.co.uk/video-collections/hazards/" target="_blank" rel="noopener">Hazards</a><a href="https://timeforgeography.co.uk/video-collections/plate-tectonics/" target="_blank" rel="noopener">Plate tectonics</a><a href="https://timeforgeography.co.uk/video-collections/weather-and-climate/" target="_blank" rel="noopener">Weather and climate</a><small>Free videos, opens in a new tab</small></div>
 
 <h3 class="mkh" id="hz-learn">1. Learn it</h3>
 
@@ -746,6 +754,7 @@ ol.steps li{padding:4px 0 4px 4px}
 <!-- ===== RIVERS ===== -->
 <div class="sub" id="mk-rv">
 <div class="jump"><a href="#rv-learn">Learn it</a><a href="#rv-land">Landforms</a><a href="#rv-case">The Eden</a><a href="#rv-test">Self-test</a><a href="#rv-exam">Exam practice</a></div>
+<div class="tfg"><span class="lbl">Watch first on Time for Geography</span><a href="https://timeforgeography.co.uk/video-collections/rivers/" target="_blank" rel="noopener">Rivers</a><small>Free videos, opens in a new tab</small></div>
 
 <h3 class="mkh" id="rv-learn">1. Learn it</h3>
 
@@ -953,6 +962,7 @@ ol.steps li{padding:4px 0 4px 4px}
 <!-- ===== CITIES ===== -->
 <div class="sub" id="mk-ct">
 <div class="jump"><a href="#ct-learn">Learn it</a><a href="#ct-case">London</a><a href="#ct-test">Self-test</a><a href="#ct-exam">Exam practice</a></div>
+<div class="tfg"><span class="lbl">Watch first on Time for Geography</span><a href="https://timeforgeography.co.uk/video-collections/cities/" target="_blank" rel="noopener">Cities</a><small>Free videos, opens in a new tab</small></div>
 
 <h3 class="mkh" id="ct-learn">1. Learn it</h3>
 
@@ -1090,6 +1100,7 @@ ol.steps li{padding:4px 0 4px 4px}
 <!-- ===== DEVELOPMENT ===== -->
 <div class="sub" id="mk-dv">
 <div class="jump"><a href="#dv-learn">Learn it</a><a href="#dv-case">The DRC</a><a href="#dv-test">Self-test</a><a href="#dv-exam">Exam practice</a></div>
+<div class="tfg"><span class="lbl">Watch first on Time for Geography</span><a href="https://timeforgeography.co.uk/video-collections/global-development/" target="_blank" rel="noopener">Global development</a><small>Free videos, opens in a new tab</small></div>
 
 <h3 class="mkh" id="dv-learn">1. Learn it</h3>
 
@@ -1260,6 +1271,7 @@ ol.steps li{padding:4px 0 4px 4px}
 <!-- ===== FIELDWORK ===== -->
 <div class="sub" id="mk-fw">
 <div class="jump"><a href="#fw-learn">Learn it</a><a href="#fw-case">Your Whitstable enquiry</a><a href="#fw-unf">Unfamiliar fieldwork</a><a href="#fw-test">Self-test</a><a href="#fw-exam">Exam practice</a></div>
+<div class="tfg"><span class="lbl">Watch first on Time for Geography</span><a href="https://timeforgeography.co.uk/video-collections/fieldwork-techniques/" target="_blank" rel="noopener">Fieldwork techniques</a><a href="https://timeforgeography.co.uk/video-collections/coasts/" target="_blank" rel="noopener">Coasts</a><small>Free videos, opens in a new tab</small></div>
 
 <div class="watchbox"><b>Which fieldwork?</b> The mock fieldwork question is on <b>PHYSICAL</b> fieldwork. For you, that means the <b>longshore drift enquiry at Tankerton beach</b>. OCR's 2025 mark scheme caps an answer about human fieldwork at <b>2 marks out of 8</b>. Do not write about the traffic survey.</div>
 
@@ -2006,6 +2018,7 @@ $$('.tab').forEach(t=>t.addEventListener('click',()=>{
 }));
 
 /* topics */
+const TFG={"GH": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/hazards/\" target=\"_blank\" rel=\"noopener\">Hazards</a><a href=\"https://timeforgeography.co.uk/video-collections/plate-tectonics/\" target=\"_blank\" rel=\"noopener\">Plate tectonics</a><a href=\"https://timeforgeography.co.uk/video-collections/weather-and-climate/\" target=\"_blank\" rel=\"noopener\">Weather and climate</a><small>Free videos, opens in a new tab</small></div>", "CC": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/weather-and-climate/\" target=\"_blank\" rel=\"noopener\">Weather and climate</a><a href=\"https://timeforgeography.co.uk/video-collections/carbon-cycle/\" target=\"_blank\" rel=\"noopener\">Carbon cycle</a><small>Free videos, opens in a new tab</small></div>", "DL": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/coasts/\" target=\"_blank\" rel=\"noopener\">Coasts</a><a href=\"https://timeforgeography.co.uk/video-collections/rivers/\" target=\"_blank\" rel=\"noopener\">Rivers</a><small>Free videos, opens in a new tab</small></div>", "SE": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/ecosystems/\" target=\"_blank\" rel=\"noopener\">Ecosystems</a><small>Free videos, opens in a new tab</small></div>", "UF": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/cities/\" target=\"_blank\" rel=\"noopener\">Cities</a><small>Free videos, opens in a new tab</small></div>", "DD": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/global-development/\" target=\"_blank\" rel=\"noopener\">Global development</a><small>Free videos, opens in a new tab</small></div>", "UK": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/changing-places/\" target=\"_blank\" rel=\"noopener\">Changing places</a><a href=\"https://timeforgeography.co.uk/video-collections/the-changing-economic-world/\" target=\"_blank\" rel=\"noopener\">Changing economic world</a><small>Free videos, opens in a new tab</small></div>", "RR": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/resource-management-security/\" target=\"_blank\" rel=\"noopener\">Resource management</a><small>Free videos, opens in a new tab</small></div>", "FW": "<div class=\"tfg\"><span class=\"lbl\">Watch first on Time for Geography</span><a href=\"https://timeforgeography.co.uk/video-collections/fieldwork-techniques/\" target=\"_blank\" rel=\"noopener\">Fieldwork techniques</a><small>Free videos, opens in a new tab</small></div>"};
 const PNAME={1:'PAPER 1',2:'PAPER 2',3:'PAPER 3',0:'PAPERS 1 & 2'};
 const PCLS={1:'p1',2:'p2',3:'p3',0:'p3'};
 $('#topiclist').innerHTML=TOPICS.map(t=>`
@@ -2013,6 +2026,7 @@ $('#topiclist').innerHTML=TOPICS.map(t=>`
 <span class="chip paper">${PNAME[t.paper]}</span> <span class="gref">${t.id}</span>
 <h3>${t.name}</h3>
 <div class="meta">${t.eq.join(' · ')}</div>
+${TFG[t.id]||''}
 <details open><summary>Must know cold</summary><ul class="tick">${t.must.map(m=>`<li>${m}</li>`).join('')}</ul></details>
 <details><summary>Case-study slots</summary><ul class="tick">${t.cs.map(c=>`<li>${c}</li>`).join('')}</ul>
 <div class="note"><b>Check:</b> match these slots to the case studies taught in YOUR lessons before you revise them.</div></details>
