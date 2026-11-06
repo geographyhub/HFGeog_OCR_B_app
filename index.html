@@ -260,6 +260,24 @@ ol.steps li{padding:4px 0 4px 4px}
 .tfg a:hover{background:var(--moss)}
 .tfg a:focus-visible{outline:3px solid var(--moss);outline-offset:2px}
 .tfg small{flex-basis:100%;color:var(--mut);font-size:13px;font-weight:700}
+
+/* aid: top-down vs bottom-up */
+.tdbu{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0 14px}
+.tdcol{border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px}
+.tdcol.td{background:var(--p2bg)}.tdcol.bu{background:var(--p1bg)}
+.tdh{font:900 21px 'Fraunces',serif;text-align:center;margin-bottom:4px}
+.td .tdh{color:var(--navy)}.bu .tdh{color:var(--moss)}
+.tdbox{background:#fff;border-radius:8px;padding:10px 12px;font:700 16px 'Nunito',system-ui,sans-serif;text-align:center;border:2px solid}
+.td .tdbox{border-color:var(--navy)}.bu .tdbox{border-color:var(--moss)}
+.tdarw{text-align:center;font-size:22px;line-height:1.1}
+.td .tdarw{color:var(--navy)}.bu .tdarw{color:var(--moss)}
+@media(max-width:560px){.tdbu{grid-template-columns:1fr}}
+.peel{background:var(--field);border-radius:10px;padding:12px;margin:6px 0 12px}
+.peelh{font:800 16px 'Nunito',system-ui,sans-serif;color:var(--navy);margin-bottom:6px}
+.prow{display:flex;gap:10px;align-items:flex-start;background:#fff;border-radius:8px;padding:8px 10px;margin:6px 0;font-size:16px}
+.pl{flex:0 0 34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font:900 18px 'Nunito',system-ui,sans-serif;display:flex;align-items:center;justify-content:center}
+.prow.hw .pl{background:var(--ochre)}.prow.jd .pl{background:var(--moss)}
+.model{background:#fff;border-left:4px solid var(--moss);padding:10px 12px;border-radius:6px;margin:8px 0;font-size:16px}
 </style>
 </head>
 <body>
@@ -548,6 +566,8 @@ ol.steps li{padding:4px 0 4px 4px}
 <label><input type="checkbox"> I can describe Rostow's five stages and place the DRC on them</label>
 <label><input type="checkbox"> I can explain how colonialism and politics held back the DRC</label>
 <label><input type="checkbox"> I can judge the DRC's progress towards three SDGs</label>
+<label><input type="checkbox"> I can explain top-down and bottom-up development, using the Inga dams and SOPACDI</label>
+<label><input type="checkbox"> I can explain the advantages and disadvantages of aid, including the DRC's 2010 debt relief</label>
 <p class="clh">Fieldwork</p>
 <label><input type="checkbox"> I can name the six stages of an enquiry</label>
 <label><input type="checkbox"> I can describe my Tankerton methods and give a figure from each</label>
@@ -1109,7 +1129,7 @@ ol.steps li{padding:4px 0 4px 4px}
 
 <!-- ===== DEVELOPMENT ===== -->
 <div class="sub" id="mk-dv">
-<div class="jump"><a href="#dv-learn">Learn it</a><a href="#dv-case">The DRC</a><a href="#dv-test">Self-test</a><a href="#dv-exam">Exam practice</a></div>
+<div class="jump"><a href="#dv-learn">Learn it</a><a href="#dv-case">The DRC</a><a href="#dv-aid">Aid: top-down and bottom-up</a><a href="#dv-test">Self-test</a><a href="#dv-exam">Exam practice</a></div>
 <div class="tfg"><span class="lbl">Watch first on Time for Geography</span><a href="https://timeforgeography.co.uk/video-collections/global-development/" target="_blank" rel="noopener">Global development</a><small>Free videos, opens in a new tab</small></div>
 
 <h3 class="mkh" id="dv-learn">1. Learn it</h3>
@@ -1137,7 +1157,7 @@ ol.steps li{padding:4px 0 4px 4px}
 <tr><td><b>Natural hazards:</b> rebuilding after disasters costs money and can lead to debt</td><td><b>Debt:</b> money spent repaying loans cannot be spent on schools or health care</td></tr>
 <tr><td><b>Natural resources:</b> oil or minerals can earn money, but only if the profits stay in the country</td><td><b>Trade:</b> relying on raw materials leaves a country exposed when prices fall</td></tr>
 </table>
-<p><b>Top-down</b> development is decided by governments or big organisations such as the World Bank. <b>Bottom-up</b> development is when NGOs work with local communities to find out what they need.</p>
+<p><b>Top-down</b> development is decided by governments or big organisations such as the World Bank. <b>Bottom-up</b> development is when NGOs work with local communities to find out what they need. <a href="#dv-aid">Section 3</a> covers both, with a DRC example of each.</p>
 </div>
 
 <div class="card" style="margin-top:14px">
@@ -1210,10 +1230,116 @@ ol.steps li{padding:4px 0 4px 4px}
 <div class="keyidea"><b>Linking it to the MDGs you studied:</b> the SDGs carry on the MDGs' work. The MDG on child mortality continues in SDG 3, and the MDG on primary education continues in SDG 4. Your MDG figures show the starting point; the SDG figures above show where the DRC is now.</div>
 </div>
 
-<h3 class="mkh" id="dv-test">3. Quick self-test</h3>
+<h3 class="mkh" id="dv-aid">3. Aid: top-down and bottom-up development</h3>
+<p class="lead">OCR can ask you to explain or evaluate a top-down or a bottom-up strategy in your LIDC. Learn one of each for the DRC: the Inga dams (top-down) and the SOPACDI coffee cooperative (bottom-up).</p>
+
+<div class="card">
+<h3>What is aid?</h3>
+<p><b>Aid</b> is help given by one country or organisation to another. It can be money, food, equipment, expert advice, or cancelling money that a country owes.</p>
+<table class="tariff">
+<tr><th>Type of aid</th><th>What it means</th><th>DRC example</th></tr>
+<tr><td><b>Bilateral</b></td><td>One government gives directly to another</td><td>UK government aid helped fund the SOPACDI coffee project</td></tr>
+<tr><td><b>Multilateral</b></td><td>Many countries give through an organisation such as the World Bank, the IMF or the UN</td><td>World Bank money for the Inga dams</td></tr>
+<tr><td><b>NGO</b> (charity)</td><td>Non-governmental organisations, funded by donations, work directly with communities</td><td>Twin, a UK fair trade organisation, working with SOPACDI coffee farmers</td></tr>
+<tr><td><b>Short-term</b> (emergency)</td><td>Food, shelter and medicine straight after a disaster or conflict</td><td>Food and shelter for families fleeing fighting in the east</td></tr>
+<tr><td><b>Long-term</b> (development)</td><td>Projects that improve lives for years: schools, clean water, electricity</td><td>World Bank support for free primary schooling since 2019</td></tr>
+<tr><td><b>Debt relief</b></td><td>Lenders cancel some of the money a country owes</td><td>$12.3 billion of DRC debt cancelled in July 2010</td></tr>
+</table>
+
+<h4 class="mini">Advantages and disadvantages of aid</h4>
+<table class="tariff">
+<tr><th>Advantages</th><th>Disadvantages</th></tr>
+<tr><td>Saves lives in emergencies</td><td>A country can come to depend on it</td></tr>
+<tr><td>Pays for schools, health care and infrastructure the government cannot afford</td><td>Loans must be repaid with interest, which adds to debt</td></tr>
+<tr><td>Debt relief frees money for services instead of repayments</td><td>Aid and debt relief often come with conditions on how the country runs its economy</td></tr>
+<tr><td>Expert help and training build local skills</td><td>Corruption means money may not reach the people who need it</td></tr>
+</table>
+<div class="watchbox"><b>Debt relief in the DRC:</b> by 2000 the DRC owed about $13 billion, much of it built up under Mobutu. In July 2010 the IMF and World Bank agreed $12.3 billion of debt relief, cutting the debt by more than 80%. In return, the DRC had to reform how it managed its economy. The money saved could go on services, but only if the government spends it well.</div>
+</div>
+
+<div class="card" style="margin-top:14px">
+<h3>Top-down and bottom-up: the difference</h3>
+<div class="tdbu" role="img" aria-label="Top-down: decisions pass down from governments and big organisations to local people. Bottom-up: local people decide what they need and build up from there.">
+  <div class="tdcol td">
+    <div class="tdh">Top-down</div>
+    <div class="tdbox">Governments, the World Bank or big companies decide and pay</div>
+    <div class="tdarw">▼</div>
+    <div class="tdbox">A large project: a dam, a motorway, a power line</div>
+    <div class="tdarw">▼</div>
+    <div class="tdbox">Local people are told what will happen</div>
+  </div>
+  <div class="tdcol bu">
+    <div class="tdh">Bottom-up</div>
+    <div class="tdbox">A small project the community runs itself</div>
+    <div class="tdarw">▲</div>
+    <div class="tdbox">An NGO gives training, small grants or contacts</div>
+    <div class="tdarw">▲</div>
+    <div class="tdbox">Local people say what they need</div>
+  </div>
+</div>
+<table class="tariff">
+<tr><th></th><th>Top-down</th><th>Bottom-up</th></tr>
+<tr><td><b>Who decides?</b></td><td>Governments, the World Bank, big companies</td><td>Local people, often helped by an NGO</td></tr>
+<tr><td><b>Scale</b></td><td>Large: a whole region or country</td><td>Small: one village or group</td></tr>
+<tr><td><b>Cost</b></td><td>Billions of dollars, often borrowed</td><td>Small, often grants or donations</td></tr>
+<tr><td><b>Advantages</b></td><td>Can transform a whole economy; builds big infrastructure such as power supplies</td><td>Meets real local needs; cheap; local people have the skills to keep it running</td></tr>
+<tr><td><b>Disadvantages</b></td><td>Debt; people moved off their land; benefits may not reach the poor; corruption</td><td>Helps fewer people; slow to spread; can depend on NGO funding</td></tr>
+</table>
+<div class="keyidea"><b>Learn the definition:</b> a bottom-up strategy is a small-scale development scheme led by a local community. China's Three Gorges Dam is the classic example of a top-down strategy.</div>
+</div>
+
+<h4 class="mini" style="margin-top:22px">Top-down in the DRC: the Inga dams</h4>
+<div class="card casecard">
+<div class="factrow">
+<div><span>Where</span>Inga Falls on the Congo River, near Matadi in the far west</div>
+<div><span>Built</span>Inga 1 in 1972, Inga 2 in 1982, under Mobutu</div>
+<div><span>Paid for by</span>Foreign loans, including the World Bank and European banks</div>
+<div><span>Power line</span>About 1,700 km, to the copper mines of Katanga in the south-east</div>
+</div>
+<p><b>The plan:</b> use the huge flow of the Congo River to make cheap hydroelectric power, run the mines and industries, and kick-start development. It was decided by the government and foreign lenders, not by the people living there.</p>
+<table class="tariff">
+<tr><th>What went well</th><th>What went wrong</th></tr>
+<tr><td>Inga 1 and 2 can produce about 1,775 MW of renewable electricity</td><td>Costs overran. A large share of the roughly $13 billion debt Mobutu left in 1997 can be traced back to Inga</td></tr>
+<tr><td>Power for the copper and cobalt mines, the DRC's main exports</td><td>When mining in Katanga collapsed, the dams ran at about half capacity, but the debt still had to be paid</td></tr>
+<tr><td>Some power is sold to neighbouring countries, earning money</td><td>Thousands of families were moved off their land and have never been fully compensated</td></tr>
+<tr><td>Proved the site's potential: a completed Grand Inga scheme could be the largest hydroelectric site in the world</td><td>Most power goes to mines and cities: only about 1 in 5 Congolese has electricity today</td></tr>
+</table>
+<h4 class="mini">What next: Inga 3</h4>
+<p>The government wants a third dam, Inga 3, producing between 4,800 and 11,000 MW. The World Bank stopped funding it in 2016 over concerns about how it was being managed, then in 2025 approved an initial <b>$250 million</b>, which could rise to $1 billion. Campaigners warn it could move more than 30,000 people, many of them already moved for Inga 1 and 2, and that much of the power will go to mines and other countries rather than to Congolese homes.</p>
+<div class="watchbox"><b>Judgement:</b> Inga shows the strengths and the dangers of top-down development. It could power the whole economy, but so far it has left debt, displaced families and electricity that bypasses most of the population.</div>
+</div>
+
+<h4 class="mini" style="margin-top:22px">Bottom-up in the DRC: the SOPACDI coffee cooperative</h4>
+<div class="card casecard">
+<div class="factrow">
+<div><span>Where</span>Minova, on the shore of Lake Kivu, South Kivu, in the far east</div>
+<div><span>Started</span>2003, by local coffee farmer Joachim Munganga</div>
+<div><span>Helped by</span>Twin, a UK fair trade NGO, from 2008, with UK government aid</div>
+<div><span>Members</span>284 farmers grew to 5,200 in six years; about 1 in 5 are women</div>
+</div>
+<p><b>The problem:</b> years of war in eastern DRC had wrecked the coffee trade. Farmers had no way to get their coffee to market, so many smuggled it across Lake Kivu to Rwanda at night. Many drowned when storms blew up on the lake.</p>
+<p><b>The bottom-up solution:</b> local farmers set up their own cooperative. Munganga restored an old washing station so members could process their coffee locally, and brought together farmers from rival ethnic groups. The farmers decide how the cooperative is run and elect their own leaders.</p>
+<ol class="steps">
+<li><b>2003:</b> SOPACDI starts, with a restored coffee washing station.</li>
+<li><b>2008:</b> Twin helps with business skills, replanting and better quality. The first new central washing station in the country for over 40 years is built.</li>
+<li><b>2011:</b> SOPACDI becomes the first Fairtrade certified cooperative in the DRC. Its coffee goes on sale in Sainsbury's.</li>
+</ol>
+<table class="tariff">
+<tr><th>Successes</th><th>Limits</th></tr>
+<tr><td>Farmers get a fair, guaranteed price, plus a Fairtrade premium. Members say it pays their children's school fees</td><td>Small scale: about 5,000 farmers in a country of over 100 million people</td></tr>
+<tr><td>No more dangerous night crossings of the lake to sell coffee</td><td>Depends on world coffee prices and on buyers abroad</td></tr>
+<tr><td>Profits paid for tree nurseries, offices, a tasting lab and two washing stations; farmers learn composting and how to stop soil erosion</td><td>Fighting continues: in January 2025 the rebel group M23 captured Minova, and thousands of people fled</td></tr>
+<tr><td>Former fighters and widows have work; other cooperatives in South Kivu have copied it</td><td>High taxes: in 2012 the DRC charged about 12% tax on coffee exports, against about 1% in Rwanda</td></tr>
+</table>
+<div class="watchbox"><b>Judgement:</b> SOPACDI has changed thousands of lives because local farmers designed it around what they needed. But it cannot develop a whole country on its own, and it is only as safe as the region around it.</div>
+</div>
+
+<div class="keyidea"><b>Which works better for the DRC?</b> Top-down projects like Inga can reach millions, but have left debt and displaced people. Bottom-up projects like SOPACDI reach fewer people, but the benefits go straight to the poor. The best answers say the DRC needs both, as long as top-down projects are run honestly.</div>
+
+<h3 class="mkh" id="dv-test">4. Quick self-test</h3>
 <div class="mkquiz" data-quiz="dv"></div>
 
-<h3 class="mkh" id="dv-exam">4. Exam practice</h3>
+<h3 class="mkh" id="dv-exam">5. Exam practice</h3>
 <p class="lead">Real OCR questions. Answer on paper first, timed, then open the mark scheme and mark yourself.</p>
 
 <div class="msq">
@@ -1276,6 +1402,48 @@ ol.steps li{padding:4px 0 4px 4px}
 <p class="msnote"><b>For the DRC:</b> over 70% of the world's cobalt, mostly sold abroad; foreign-owned mines taking profits out; the price swings since 2016; and World Bank support for free primary schooling. Then judge: have global connections helped or harmed?</p>
 </details>
 </div>
+
+
+<div class="msq">
+<span class="chip cp2">OCR June 2019 · Paper 2 · Q2(b)</span>
+<p class="qtext">Which one of the following best describes a bottom-up development strategy? <span class="marks">[1]</span> <span class="time">1 minute</span></p>
+<details><summary>Mark scheme: what earns marks</summary>
+<ul class="tick"><li>A small-scale development scheme led by a local community</li></ul>
+<p class="msnote">Watch for the wrong options: anything led by a government or covering a whole country is top-down.</p>
+</details>
+</div>
+
+<div class="msq">
+<span class="chip cp2">OCR sample paper (2025 specification) · Paper 2 · Q2(c)</span>
+<p class="qtext">What type of development strategy is the Three Gorges Dam an example of? <span class="marks">[1]</span> <span class="time">1 minute</span></p>
+<details><summary>Mark scheme: what earns marks</summary>
+<ul class="tick"><li>Top-down: a large-scale project planned and paid for by the government</li></ul>
+</details>
+</div>
+
+<div class="msq">
+<span class="chip cp2">Practice question in the OCR style · Case study</span>
+<p class="qtext">For an LIDC you have studied, evaluate how successful a bottom-up development strategy has been. <span class="marks">[6]</span> <span class="time">6 minutes</span></p>
+<div class="peel">
+<p class="peelh">Plan it with PEEL, then add a <b>However</b> paragraph and a judgement</p>
+<div class="prow"><span class="pl">P</span><div><b>Point:</b> SOPACDI, a coffee cooperative in Minova, eastern DRC, has been successful because…</div></div>
+<div class="prow"><span class="pl">E</span><div><b>Evidence:</b> a fact or figure: 284 members became 5,200; first Fairtrade cooperative in the DRC in 2011</div></div>
+<div class="prow"><span class="pl">E</span><div><b>Explain:</b> this means that… (fair price, school fees, no more smuggling across Lake Kivu)</div></div>
+<div class="prow"><span class="pl">L</span><div><b>Link:</b> so the strategy has improved quality of life for…</div></div>
+<div class="prow hw"><span class="pl">H</span><div><b>However:</b> a second PEEL on the limits: small scale, coffee prices, M23 capturing Minova in 2025</div></div>
+<div class="prow jd"><span class="pl">J</span><div><b>Judgement:</b> Overall, SOPACDI has been successful for its members, but…</div></div>
+</div>
+<details><summary>Mark scheme: what earns marks</summary>
+<ul class="tick"><li><b>Level 3 (5–6):</b> a well-developed evaluation of how successful the strategy has been, with place-specific detail and a clear judgement</li><li><b>Level 2 (3–4):</b> developed points on success or failure, with some place detail</li><li><b>Level 1 (1–2):</b> simple points, or just describing the project</li></ul>
+<p class="msnote"><b>Watch out:</b> "evaluate" means weigh up successes against limits and decide. Writing about a top-down scheme such as Inga does not answer this question. Name the place and use numbers.</p>
+</details>
+<details><summary>Model answer: Level 3</summary>
+<p class="model">SOPACDI is a coffee cooperative set up in 2003 by local farmer Joachim Munganga in Minova, on Lake Kivu in the eastern DRC. It has been successful because farmers now sell their coffee at a fair price. Membership grew from 284 to 5,200 in six years, and in 2011 it became the first Fairtrade cooperative in the DRC, selling in Sainsbury's. This means farmers no longer smuggle coffee across Lake Kivu at night, where many drowned, and the Fairtrade premium helps pay school fees. So the strategy has improved quality of life for thousands of families.</p>
+<p class="model">However, its success is limited. It reaches about 5,000 farmers in a country of over 100 million, so it cannot develop the DRC on its own. It depends on world coffee prices, and the region is still unstable: in January 2025 the M23 rebels captured Minova and many people fled.</p>
+<p class="model">Overall, SOPACDI has been very successful for its members because they run it themselves, but its impact on the whole country is small while conflict continues.</p>
+</details>
+</div>
+
 </div>
 
 <!-- ===== FIELDWORK ===== -->
@@ -2174,7 +2342,16 @@ $('#msqs').innerHTML=MSQS.map(m=>`<div class="msq">
    ['What share of the world\'s cobalt does the DRC produce?',['Over 70%','About 10%','About 30%','Exactly 50%'],0,'230,000 tonnes in 2025, more than five times Indonesia.'],
    ['Why is relying on cobalt risky?',['When the price falls, the country loses income','Cobalt is no longer used','It creates too many jobs','It is only sold within the DRC'],0,'The price swung from about $23,000 to $95,000 and back to $55,000 between 2016 and 2021.'],
    ['What happened to DRC primary schooling in September 2019?',['It became free','It was closed','It became compulsory for the first time','It moved online'],0,'Public primary pupils rose from 14.2 million to 17.9 million in two years.'],
-   ['Which SDG covers child deaths?',['SDG 3: Good health','SDG 1: No poverty','SDG 4: Quality education','SDG 13: Climate action'],0,'Under-five deaths fell from about 180 to about 90 per 1,000 births between 1990 and 2024.']
+   ['Which SDG covers child deaths?',['SDG 3: Good health','SDG 1: No poverty','SDG 4: Quality education','SDG 13: Climate action'],0,'Under-five deaths fell from about 180 to about 90 per 1,000 births between 1990 and 2024.'],
+   ['Which best describes a bottom-up development strategy?',['A small-scale scheme led by a local community','A large dam paid for by the World Bank','A loan from the IMF to the government','A national plan covering the whole country'],0,'The others are all top-down: decided by governments or big organisations.'],
+   ['What is multilateral aid?',['Aid given through organisations such as the World Bank or the UN','Aid from one government straight to another','Aid from charities funded by donations','Food and shelter straight after a disaster'],0,'Bilateral is one government to another; NGO aid comes from charities.'],
+   ['In July 2010, how much DRC debt did the IMF and World Bank agree to cancel?',['$12.3 billion','$1.2 million','$250 million','$95 billion'],0,'It cut the debt by more than 80%, in return for economic reforms.'],
+   ['Which DRC project is a TOP-DOWN strategy?',['The Inga dams on the Congo River','The SOPACDI coffee cooperative','A village savings group','A farmers\' tree nursery'],0,'Inga 1 and 2 were planned by the government and paid for with foreign loans.'],
+   ['Why did Inga 1 and 2 add to the DRC\'s problems?',['They left huge debts and displaced families who were never fully compensated','They flooded Kinshasa','They were run by an NGO that ran out of money','They produced no electricity at all'],0,'And only about 1 in 5 Congolese has electricity today.'],
+   ['Where is the SOPACDI coffee cooperative based?',['Minova, on Lake Kivu in the east','Kinshasa, the capital','Matadi, near the Inga Falls','Lubumbashi, in the mining south'],0,'South Kivu province, on the border with Rwanda.'],
+   ['Before SOPACDI, how did many Kivu farmers sell their coffee?',['By smuggling it across Lake Kivu to Rwanda at night','Through Fairtrade shops in Kinshasa','Along the Inga power line','By selling it to the World Bank'],0,'Many drowned when storms blew up on the lake.'],
+   ['Which UK fair trade NGO helped SOPACDI from 2008?',['Twin','Oxfam','WaterAid','Save the Children'],0,'Twin helped with business skills, replanting and a new washing station.'],
+   ['Which is a LIMIT of the SOPACDI scheme?',['It helps about 5,000 farmers in a country of over 100 million','It moved 30,000 people off their land','It left the DRC with billions in debt','It only sells coffee inside the DRC'],0,'Bottom-up schemes help fewer people. The other options describe Inga or are untrue.']
   ],
   fw:[
    ['Which of these is PRIMARY data?',['The groyne drops you measured at Tankerton','A satellite image of Whitstable','A government report on the coast','A newspaper article'],0,'Primary data is data you collected yourself.'],
